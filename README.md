@@ -11,6 +11,7 @@ A functional dashboard for Finnhub.io. Built with React designed to be as client
 ### Phase 2
 1. [ ] Prettify Existing React Widgets
 2. [ ] Multiple Widgets for the same data or a subset thereof (appearance)
+3. [ ] Estimated API Limit tracker widget with flow control factor
 99. [ ] Simple Premium data support
 
 ## Phase 3
@@ -26,17 +27,24 @@ A functional dashboard for Finnhub.io. Built with React designed to be as client
 1. [ ] Functional Dashboard for realtime intraday info
     1. [x] Movable grid layout (thanks https://github.com/react-grid-layout/react-grid-layout)
     2. [x] Realtime visual representation of security status
-    3. [ ] Ability to add and remove securities
-    4. [ ] Notification if limits reached
+    3. [ ] User-entered API Key and stored locally
+    4. [ ] Queue for API requests, with flow control
+    5. [ ] Cache Exchanges and Securities, via flow control
+    6. [ ] Ability to add and remove securities
+    7. [ ] Notification if limits reached
 2. [ ] Functional Dashboard for portfolio status
     1. [ ] Ability to add and remove holdings
-    2. [ ] Save security list, API Token, and holdings to local cache
-    3. [ ] Simple staus of holdings (positions age, time since last entry position, unrealized gains)
-    4. [ ] Ability to export local cache for transfer/backup
+    2. [ ] Distiguish between holdings and watchlists
+    3. [ ] Save security list and holdings to local cache
+    4. [ ] Simple staus of holdings (positions age, time since last entry position, unrealized gains)
+    45 [ ] Ability to export local cache for transfer/backup
 
 ### Phase 2
 1. [ ] Prettify Existing React Widgets
+    1. [ ] Create CSS standard for theming 
+    2. [ ] Finndash CSS Theme
 2. [ ] Multiple Widgets for the same data or a subset thereof (appearance)
+3. [ ] Estimated API Limit tracker widget with flow control factor
 99. [ ] Simple Premium data support
 
 ## Phase 3

@@ -7,6 +7,7 @@ import '../node_modules/react-resizable/css/styles.css'
 
 import request from 'request'
 
+import { configure } from '@testing-library/dom';
 
 
 // #SECRET
@@ -61,11 +62,14 @@ class SimpleTicker extends Component {
     }
     
     const backgroundOpacity = 50    /100.0;
+    const dayPriceChange = (this.props.data.lastTrade.p - this.props.data.previousClose)
+    const dayPriceChangePcnt = dayPriceChange / this.props.data.previousClose
+
     return (
       <div style={{
         backgroundColor: 
-          this.props.data.lastTrade.p > this.props.data.previousClose ? 'rgba(63, 191, 63, '+backgroundOpacity+')' : 
-            (this.props.data.lastTrade.p < this.props.data.previousClose ? 'rgba(255, 40, 40, '+backgroundOpacity+')' : 
+          this.props.data.lastTrade.p > this.props.data.previousClose ? 'rgba(63, 191, 63, '+(Math.abs(dayPriceChangePcnt*15)+.1)+')' : 
+            (this.props.data.lastTrade.p < this.props.data.previousClose ? 'rgba(255, 40, 40, '+(Math.abs(dayPriceChangePcnt*15)+.1)+')' : 
               'none'
             )
         }}>
