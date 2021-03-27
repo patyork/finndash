@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
+import Icon from "@material-ui/core/Icon";
 
 import { Responsive, WidthProvider  } from 'react-grid-layout';
 import '../node_modules/react-grid-layout/css/styles.css'
@@ -10,8 +11,11 @@ import request from 'request'
 import { configure } from '@testing-library/dom';
 
 
-// #SECRET
+import Favorite from "@material-ui/icons/Favorite";
+import Button from "components/CustomButtons/Button.js";
 
+
+// #SECRET
 const secretHoldings =  ['your', 'holdings']
 const secretToken =     'your api key from finnhub'
 

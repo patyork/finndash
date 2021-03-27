@@ -60,3 +60,4 @@ A functional dashboard for Finnhub.io. Built with React designed to be as client
 
 ## AKS
 * React on Windows when you have a space in your user profile: https://stackoverflow.com/questions/58354348/windows-10-npx-create-react-app-myapp-command-does-not-work-because-of-whit
+* Material React Dashboard: https://www.creative-tim.com/product/material-dashboard-react?partner=104080
